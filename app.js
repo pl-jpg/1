@@ -14,9 +14,9 @@
         location: "图书馆三楼",
         time: "2025-05-10 14:30",
         contact: "13800000",
-        images: ["images/4218bb9b73dbce89280e2f1a9ddd1337.jpg"],
+        images: ["4218bb9b73dbce89280e2f1a9ddd1337.jpg"],
         user: {
-          avatarUrl: "images/4218bb9b73dbce89280e2f1a9ddd1337.jpg",
+          avatarUrl: "4218bb9b73dbce89280e2f1a9ddd1337.jpg",
           nickName: "小明"
         },
         comments: []
