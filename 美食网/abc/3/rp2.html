@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜谱详情页</title>
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />
+ 
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+ 
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="header-nav">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <h1>美食网</h1>
+                    </div>
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="hvr-bounce-to-bottom"><a href="../../1.html">主页</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="../../2.html">关于</a></li>
+                            <li class="hvr-bounce-to-bottom  active"><a href="../../3.html">分类</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="../../4.html">推荐</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="../../5.html">联系我们</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="single">
+        <div class="container">
+            <h3 class="cp_name">水煮肉片</h3>
+            <div class="single-left">
+                <p></p>
+                <img src="../../images/4.jpg" alt=" " class="img-responsive" />
+            </div>
+            <div class="single-right">
+                <h4>食材准备</h4>
+                <p> <span class="cp_shicai">
+                    主料： 猪里脊肉(150克)
+                    辅料：白菜(50克)
+                    调料：鸡蛋(30克)胡椒(3克)豆瓣酱(10克) 姜(10克)大葱(10克)辣椒(红、尖、干)(5克)花椒(5克)酱油(10克)料酒(8克)味精(5克) 盐(10克)淀粉(豌豆)(10克)植物油(50克)</span>
+                </p>
+                <h4>注意事项</h4>
+                <p><span class="cp_warning">1.干辣椒和花椒记得要炸至棕红色，炸之后油还可以炒蔬菜。
+                    2.豆瓣酱要记得翻炒出红油，而且最后的油要烧的特别的热，这样才能够将蒜末的香味逼出。</span>
+                </p>
+            </div>
+            <div class="clearfix"> </div>
+            <p class="tortor">
+                步骤1 将猪里脊肉切片，鸡蛋清和淀粉、盐、味精、料酒调匀成糊，涂抹在肉片上； 步骤2 白菜叶、姜洗净切片，葱白切段； 步骤3 将35克植物油入锅，烧热，倒入花椒、干辣椒慢火炸，待辣椒呈金黄色捞出； 步骤4 然后，将辣椒、花椒切成细末； 步骤5 用锅中油爆炒豆瓣辣酱，然后将白菜叶、葱白、姜、肉汤、酱油、胡椒粉、料酒、鸡精等调料放入，略搅几下，使之调匀； 步骤6 随即放入肉片，再炖，肉片熟后，将肉片盛起，将剁碎的干辣椒、花椒末撒上； 步骤7 用剩余的植物油烧开，淋在肉片上，使热油把干辣椒、花椒粉、肉片再炸一下，即可使麻、辣、浓香四溢。
+            </p>
+            <div class="face-twi">
+                <ul>
+                    <li>
+                        <a href="#" class="face"> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twi"> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rs"> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="in"> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dri"> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-3 footer-grid">
+                    <h3>关于我们</h3>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h3>用户协议</h3>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h3>隐私政策</h3>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h3>客户端下载</h3>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"> </div>
+    <div class="copy-right">
+        <p>Copyright &copy; 2024.美食网站版权所有</p>
+    </div>
+
+    <script src="../../js/bootstrap.js">
+    </script>
+
+</body>
+
+</html>

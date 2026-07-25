@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>ul,li,ol{
+        list-style:none;
+        }
+        #fh{    border: none;
+    outline: none;
+ 
+    background: #03910a;
+    width: 330px;
+    padding: 15px 31px;
+    font-size: 18px;
+    border-radius: 30px 30px 30px 30px
+
+   }
+   #fh a{margin: 0px 111px 0px ;   color: #fff;}
+        
+        
+        </style>
+</head>
+<body>
+    <div id="fh"><li><a href="1.html">返回主页面</a></li></div>
+    <div id="app">
+        <select v-model="data.sex" @change="aug">
+            <option v-for="o in data.q">
+                全部
+                {{o}}
+            </option>
+            <option  v-for="z in data.q" >
+                {{z}}
+            </option>
+        </select>
+        <input type="text" v-model="data.agr" >
+        <input type="button" value="搜索" @click="aug">{{data.agr}}
+
+        <ul id="content">
+            <li v-for="v in data.d" v-show="v.title.includes(data.agr)">
+                {{v.index}} | <a :href="v.href">{{v.title}}</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="vue.global.js"></script>
+<script>
+    var{createApp,reactive}=Vue
+    createApp({
+        setup(){     
+           
+            var data = reactive({
+                d:[],
+                agr:'',
+                q:[],
+                sex:'百度',
+            })
+
+            var url='https://api.oioweb.cn/api/common/HotList'
+            
+
+            var aug = () => {
+          
+                axios.get(url).then(a=>{
+                data.d=a.data.result[data.sex];
+           
+                data.q=Object.keys(a.data.result)
+        
+
+            })
+            }
+            aug()
+            
+            return {
+                data,
+                aug
+            }
+
+        }
+    }).mount("#app")
+</script>

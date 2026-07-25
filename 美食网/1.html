@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="./js/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="header-nav">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <h1>美食网</h1>
+                    </div>
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="hvr-bounce-to-bottom active"><a href="1.html">主页</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="2.html">关于</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="33.html">分类</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="4.html">推荐</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="5.html">联系我们</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+  
+    <div class="banner">
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            $(function() {
+              
+                $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager: false,
+                    nav: false,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function() {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function() {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+
+            });
+        </script>
+        
+        <div id="top" class="callbacks_container">
+            <ul class="rslides" id="slider3">
+                <li>
+                    <div class="banner-info">
+                        <div class="baner-inf">
+                            <h1>咯咯咯</h1>
+                            <p>咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-info1">
+                        <div class="baner-inf">
+                            <h1>味道独特</h1>
+                            <p>闻起来臭、吃起来香！</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner-info2">
+                        <div class="baner-inf">
+                            <h1>清新凉爽</h1>
+                            <p>炎热的夏天，赶紧来口香甜冰凉的冰淇淋吧！</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="banner-bottom-grids">
+            <div class="container">
+                <div class="col-md-3 banner-bottom-grid">
+                    <div class="banner-bottom-grd back">
+                        <h4>01</h4>
+                        <p>品味烧烤的<span>魅力</span></p>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <p class="debitis">不闻人间烟火，但食人间美味。尝百味烧烤，品人生百味。</p>
+                    <div class="more">
+                        <a href="./2.html">了解更多</a>
+                    </div>
+                </div>
+                <div class="col-md-3 banner-bottom-grid">
+                    <div class="banner-bottom-grd back1">
+                        <h4>02</h4>
+                        <p>享受火锅的<span>滋味</span></p>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <p class="debitis">把霉运放到火锅里涮一涮，感觉生活一下子变得有滋有味了。</p>
+                    <div class="more">
+                        <a href="./2.html">了解更多</a>
+                    </div>
+                </div>
+                <div class="col-md-3 banner-bottom-grid">
+                    <div class="banner-bottom-grd back2">
+                        <h4>03</h4>
+                        <p>品尝甜品的<span>快乐</span></p>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <p class="debitis">不爱甜品的吃货不是好吃货，没有甜品的生活不是好生活</p>
+                    <div class="more">
+                        <a href="./2.html">了解更多</a>
+                    </div>
+                </div>
+                <div class="col-md-3 banner-bottom-grid">
+                    <div class="banner-bottom-grd back3">
+                        <h4>04</h4>
+                        <p>体验烤肉的<span>乐趣</span></p>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <p class="debitis">拥有烤肉的人生，才是幸福的人生，吧唧一口，吃掉忧愁。</p>
+                    <div class="more">
+                        <a href="./2.html">了解更多</a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="banner-bottom1">
+        <div class="container">
+            <h3>欢迎！</h3>
+            <div class="banner-bottom1-grids">
+                <div class="col-md-4 banner-bottom1-grid">
+                    <img src="images/7.jpg" alt=" " class="img-responsive" />
+                </div>
+                <div class="col-md-8 banner-bottom1-grid">
+                    <h4>大多数人都会从美食中获取快乐，这份快乐会让他们暂时忘记生活中的烦忧！</h4>
+                    <p>生活太苦了，人们在这种生活中久了就会很难找回那份最初的快乐，但其实获取这份快乐的方式有很多，享受美食就是其中最简单的一种，为什么不立刻去试试呢？</p>
+                    <div class="more">
+                        <a href="4.html">了解详情</a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="newsletter">
+        <div class="container">
+            <div class="get-in-grids">
+                <div class="get-in-grid-left">
+                    <p>搜索食材</p>
+                </div>
+                <div class="get-in-grid-right">
+                    <input type="text" value="请输入..." class="search-input" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入...';}" required="">
+                    <input type="submit" value="搜索" class="search-btn">
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="news">
+        <div class="container">
+            <h3>新闻和事件</h3>
+     
+            <div class="news-grids">
+                <div class="col-md-6 news-grid">
+                    <div class="col-xs-4 news-grid-left">
+                        <p>6<span>七月</span></p>
+                    </div>
+                    <div class="col-xs-8 news-grid-right">
+                        <p>【媒体评醉汉在商场骚扰殴打女生致其脑震荡，醉酒绝非耍流氓伤人的借口】7月6日，四川成都，一名女子发视频称，和朋友一行三人……</p>
+                        <div class="more">
+                            <a href="article.html">了解详情</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-6 news-grid">
+                    <div class="col-xs-4 news-grid-left">
+                        <p>7<span>七月</span></p>
+                    </div>
+                    <div class="col-xs-8 news-grid-right">
+                        <p>【话筒#山东局部特大暴雨双预警齐发#！今天到明晚山东中南部8市有强降雨】7月7日11时，山东省气象台发布暴雨橙色和强对流黄色预……</p>
+                        <div class="more">
+                            <a href="article.html">了解详情</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="news-grids">
+                <div class="col-md-6 news-grid">
+                    <div class="col-xs-4 news-grid-left">
+                        <p>7<span>七月</span></p>
+                    </div>
+                    <div class="col-xs-8 news-grid-right">
+                        <p>据农业农村部最新农情调度，全国夏粮已收96.2%，其中冬小麦已收98.3%。全国夏播粮食已播83.1%，其中夏玉米、夏大豆基本播种结……</p>
+                        <div class="more">
+                            <a href="article.html">了解详情</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-6 news-grid">
+                    <div class="col-xs-4 news-grid-left">
+                        <p>7<span>七月</span></p>
+                    </div>
+                    <div class="col-xs-8 news-grid-right">
+                        <p>海外网7月7日电据美国《财富》杂志7日报道，美国失业率从5月份的4%上升至6月份的4.1%，这几乎触发了经济衰退指标“萨姆规则”……</p>
+                        <div class="more">
+                            <a href="article.html">了解详情</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer">
+        <div class="container">
+          
+            <div class="customer-grids">
+
+
+
+
+
+                <script type="text/javascript">
+                    $(window).load(function() {
+                        $("#flexiselDemo1").flexisel({
+                            visibleItems: 3,
+                            animationSpeed: 1000,
+                            autoPlay: true,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: true,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 1
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 3
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 3
+                                }
+                            }
+                        });
+
+                    });
+                </script>
+                <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div class="copy-right">
+        <p>Copyright &copy; 2024.美食网版权所有</p>
+    </div>
+ 
+    <script src="js/bootstrap.js">
+    </script>
+    <script>
+        $(function() {
+            $('.search-btn').click(function() {
+                var searchInput = $('.search-input').val();
+                $.get("http://localhost:8080/menu?keyword="+searchInput,function (data){
+                    localStorage.setItem("menuData", JSON.stringify(data))
+                    location.href = "./pages/menus/menuContent.html";
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
